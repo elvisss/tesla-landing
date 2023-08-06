@@ -1,18 +1,21 @@
-# Astro Starter Kit: Basics
+# Tesla Landing Page
 
-```
-npm create astro@latest -- --template basics
-```
+Web page created using [Astro](https://astro.build/) and [Tailwind](https://tailwindcss.com/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![D3PF](assets/thumbnail.png)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+---
 
-## 🚀 Project Structure
+## 🟢 Page Live Demo
+
+Netlify URL: [https://tesla-landing-astro.netlify.app/](https://tesla-landing-astro.netlify.app/)
+
+## 🚀 Deployment Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5691b77-4b87-4989-a85c-9b33af2e48ec/deploy-status)](https://app.netlify.com/sites/stellar-caramel-f670f4/deploys)
+
+## 📂 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
