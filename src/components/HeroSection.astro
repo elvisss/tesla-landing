@@ -1,33 +1,19 @@
-<!-- w-screen with max-width: 100% to remove scroll -->
+---
+import Section from './Section.astro'
+import Video from './UI/Video.astro'
+---
 
-<section
-  class="landing-section bg-black h-screen w-full text-center relative overflow-hidden"
-  data-header-color="white"
+<Section
+  title="Disfrute de Tesla"
+  subtitle="Programe una prueba de conducción hoy mismo"
+  color="white"
 >
-  <div class="flex flex-col h-full relative z-20">
-    <header>
-      <h2 class="text-white pt-40 text-4xl font-medium">Disfrute de Tesla</h2>
-      <p class="text-white text-sm">
-        Programe una prueba de conducción hoy mismo
-      </p>
-    </header>
-
-    <footer class="grow flex flex-col justify-end pb-24">
-      <div>
-        <a
-          class="border-[3px] border-white text-sm rounded font-medium text-white px-12 py-3 hover:bg-white hover:text-black transition-all duration-500"
-          href="#">Prueba de conducción</a
-        >
-      </div>
-    </footer>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white text-sm rounded font-medium text-white px-12 py-3 hover:bg-white hover:text-black transition-all duration-500"
+      href="#">Prueba de conducción</a
+    >
   </div>
 
-  <div class="absolute z-10 top-0 bottom-0 left-0 right-0">
-    <video
-      class="object-cover h-full w-full"
-      autoplay
-      muted
-      loop
-      src="/videos/Homepage-Demo.webm"></video>
-  </div>
-</section>
+  <Video slot="background" source="/videos/Homepage-Demo.webm" />
+</Section>

@@ -1,0 +1,24 @@
+---
+import Section from './Section.astro'
+import Picture from './UI/Picture.astro'
+---
+
+<Section title="Model 3" subtitle="Starting at $32,740" color="white">
+  <div slot="footer" class="flex justify-center gap-x-6">
+    <a
+      class="bg-gray-600 text-sm rounded font-medium text-white px-12 py-3 hover:bg-black hover:text-white transition-all duration-500"
+      href="#">Explorar inventario</a
+    >
+    <a
+      class="bg-white text-black text-sm rounded font-medium px-12 py-3 inline-flex items-center hover:bg-black hover:text-white transition-all duration-500"
+      href="#">Pedido personalizado</a
+    >
+  </div>
+
+  <Picture
+    slot="background"
+    mobile="/images/Homepage-Model-3-Mobile-NA.avif"
+    desktop="/images/Homepage-Model-3-Desktop-NA.avif"
+    alt="Red Model 3 driving down a lakeside road"
+  />
+</Section>

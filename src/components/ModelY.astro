@@ -1,0 +1,24 @@
+---
+import Section from './Section.astro'
+import Picture from './UI/Picture.astro';
+---
+
+<Section title="Model Y" subtitle="Concertar una prueba de conducción" color="black">
+  <div slot="footer" class="flex justify-center gap-x-6">
+    <a
+      class="bg-gray-600 text-sm rounded font-medium text-white px-12 py-3 hover:bg-black hover:text-white transition-all duration-500"
+      href="#">Explorar inventario</a
+    >
+    <a
+      class="bg-white text-black text-sm rounded font-medium px-12 py-3 inline-flex items-center hover:bg-black hover:text-white transition-all duration-500"
+      href="#">Pedido personalizado</a
+    >
+  </div>
+
+  <Picture
+    slot="background"
+    mobile="/images/Homepage-ModelY-LHD-Mobile.avif"
+    desktop="/images/Homepage-Model-Y-Global-Desktop.jpeg"
+    alt="Metallic blue Model Y driving down a hillside highway"
+  />
+</Section>

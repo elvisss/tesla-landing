@@ -1,0 +1,30 @@
+---
+interface Props {
+  mobile: string
+  desktop: string
+  alt: string
+}
+
+const { mobile, desktop, alt } = Astro.props
+---
+
+<picture>
+  <source
+    srcset={mobile}
+    media="(max-width: 599px)"
+  />
+  <source
+    srcset={desktop}
+    media="(min-width: 600px)"
+  />
+  <source
+    srcset={mobile}
+    media="(min-width: 600px) and (orientation:portrait)"
+  />
+  <img
+    src={desktop}
+    srcset={desktop}
+    alt={alt}
+    class="h-full w-full object-cover"
+  />
+</picture>
